@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Programs from '../components/Programs.astro';
+import DailySchedule from '../components/DailySchedule.astro';
+import Team from '../components/Team.astro';
+import About from '../components/About.astro';
+import Enrollment from '../components/Enrollment.astro';
+import Contact from '../components/Contact.astro';
+import config from '../../site.json';
+---
+<BaseLayout title="Home">
+  {config.sections.hero && <Hero />}
+  {config.sections.programs && <Programs />}
+  {config.sections.daily_schedule && <DailySchedule />}
+  {config.sections.team && <Team />}
+  {config.sections.about && <About />}
+  {config.sections.enrollment && <Enrollment />}
+  {config.sections.contact && <Contact />}
+</BaseLayout>

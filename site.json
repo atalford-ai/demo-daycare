@@ -1,0 +1,118 @@
+{
+  "business_name": "Little Stars",
+  "tagline": "Where Little Ones Shine.",
+  "description": "Nurturing daycare center providing safe, creative, and enriching experiences for children ages 6 weeks to 5 years.",
+  "theme": "cupcake",
+  "fonts": {
+    "heading": "DM Sans",
+    "body": "Inter"
+  },
+  "is_demo": true,
+  "demo_cta": "https://altitudz.com",
+  "contact": {
+    "email": "hello@littlestars.com",
+    "phone": "(404) 555-STAR",
+    "address": "1200 Peachtree Lane, Atlanta, GA 30309",
+    "hours": "Monday - Friday, 6:00 AM - 6:00 PM"
+  },
+  "social": {
+    "instagram": "https://instagram.com/littlestars",
+    "facebook": "https://facebook.com/littlestars"
+  },
+  "sections": {
+    "hero": true,
+    "programs": true,
+    "team": true,
+    "daily_schedule": true,
+    "about": true,
+    "enrollment": true,
+    "contact": true,
+    "footer": true,
+    "parent_portal": false,
+    "gallery": false
+  },
+  "programs": [
+    {
+      "name": "Infant Care",
+      "age_range": "6 weeks - 12 months",
+      "description": "Gentle, responsive care tailored to each baby's unique needs. Our trained infant specialists focus on bonding, sensory exploration, and developmental milestones.",
+      "capacity": 8,
+      "features": ["1:3 caregiver ratio", "Daily activity reports", "Tummy time & sensory play", "Flexible feeding schedules"],
+      "tuition": "$1,800/month",
+      "image": "https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Toddler Program",
+      "age_range": "1 - 2 years",
+      "description": "Active exploration in a safe, stimulating environment. Toddlers build language, motor skills, and social confidence through guided and free play.",
+      "capacity": 12,
+      "features": ["1:4 caregiver ratio", "Language development focus", "Music & movement", "Outdoor exploration"],
+      "tuition": "$1,600/month",
+      "image": "https://images.unsplash.com/photo-1587654780293-48f9a77f2d1c?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Preschool",
+      "age_range": "3 - 4 years",
+      "description": "Creative, play-based curriculum that sparks curiosity and builds school-readiness skills. Children learn through art, science, storytelling, and collaborative projects.",
+      "capacity": 16,
+      "features": ["1:6 caregiver ratio", "STEAM-based activities", "Early literacy & math", "Social-emotional learning"],
+      "tuition": "$1,400/month",
+      "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=600&h=600&fit=crop"
+    },
+    {
+      "name": "Pre-K",
+      "age_range": "4 - 5 years",
+      "description": "Comprehensive kindergarten preparation with structured learning, creative expression, and independence-building. Children graduate confident and ready to shine.",
+      "capacity": 20,
+      "features": ["1:8 caregiver ratio", "Kindergarten readiness", "Writing & phonics", "Leadership & teamwork"],
+      "tuition": "$1,200/month",
+      "image": "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&h=600&fit=crop"
+    }
+  ],
+  "team": [
+    {
+      "name": "Ms. Angela Carter",
+      "role": "Center Director",
+      "certification": "M.Ed. Early Childhood Education",
+      "bio": "15 years of experience leading childcare programs with a passion for creating nurturing learning environments.",
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+    },
+    {
+      "name": "Mr. David Chen",
+      "role": "Lead Infant Specialist",
+      "certification": "CDA Credential, Infant/Toddler",
+      "bio": "Specializes in early bonding and developmental care with a calm, attentive approach that parents love.",
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop"
+    },
+    {
+      "name": "Ms. Priya Sharma",
+      "role": "Preschool Lead Teacher",
+      "certification": "B.A. Child Development, CPR Certified",
+      "bio": "Brings creativity and energy to the classroom through art, music, and hands-on STEAM activities.",
+      "image": "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&h=400&fit=crop"
+    },
+    {
+      "name": "Ms. Jasmine Williams",
+      "role": "Pre-K Teacher",
+      "certification": "B.S. Elementary Education, State Licensed",
+      "bio": "Focused on kindergarten readiness and building confidence through structured, supportive learning.",
+      "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop"
+    }
+  ],
+  "daily_schedule": [
+    { "time": "6:00 AM", "activity": "Arrival & Free Play", "description": "Welcoming children with open-ended play stations and cozy reading corners.", "icon": "sunrise" },
+    { "time": "8:30 AM", "activity": "Morning Circle", "description": "Songs, calendar time, weather check, and setting daily intentions together.", "icon": "users" },
+    { "time": "9:00 AM", "activity": "Learning Activities", "description": "Age-appropriate STEAM, literacy, and creative projects in small groups.", "icon": "book" },
+    { "time": "10:00 AM", "activity": "Snack Time", "description": "Healthy, nutritious snacks served family-style to build social skills.", "icon": "apple" },
+    { "time": "10:30 AM", "activity": "Outdoor Play", "description": "Playground time, nature walks, and gross motor skill development.", "icon": "sun" },
+    { "time": "11:30 AM", "activity": "Lunch", "description": "Balanced meals with fresh ingredients. Allergy-friendly options available.", "icon": "utensils" },
+    { "time": "12:30 PM", "activity": "Nap / Quiet Time", "description": "Restful environment with soft music and individual cots for each child.", "icon": "moon" },
+    { "time": "2:30 PM", "activity": "Afternoon Activities", "description": "Art, music, dramatic play, and sensory exploration.", "icon": "palette" },
+    { "time": "3:30 PM", "activity": "Snack & Story Time", "description": "Afternoon snack paired with interactive read-aloud sessions.", "icon": "book-open" },
+    { "time": "4:00 PM", "activity": "Free Play & Pickup", "description": "Open play time as families arrive. Daily reports shared with parents.", "icon": "home" }
+  ],
+  "built_by": {
+    "name": "Altitudz",
+    "url": "https://altitudz.com"
+  }
+}
