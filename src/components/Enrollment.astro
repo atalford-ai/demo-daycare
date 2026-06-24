@@ -2,105 +2,93 @@
 import config from '../../site.json';
 const programs = config.programs;
 ---
-<section id="enrollment" class="py-24 px-6 lg:px-12">
-  <div class="container mx-auto max-w-4xl">
-    <div class="text-center mb-16 fade-in-up">
-      <span class="badge badge-outline border-accent text-accent text-xs tracking-widest uppercase mb-4">Join Our Family</span>
+<section id="enrollment" class="py-24 px-6 lg:px-12 bg-base-200/50">
+  <div class="container mx-auto max-w-3xl">
+    <div class="text-center mb-16">
+      <span class="badge badge-primary badge-lg rounded-full text-xs tracking-widest uppercase mb-4">Join Our Family</span>
       <h2 class="text-4xl md:text-5xl font-heading font-bold">Enroll Your Child</h2>
       <p class="text-base-content/60 mt-4 max-w-lg mx-auto">Begin your child's journey at Little Stars. Fill out the form below and we'll be in touch within 24 hours.</p>
     </div>
 
-    <div class="grid md:grid-cols-5 gap-12">
-      <!-- Form -->
-      <div class="md:col-span-3 fade-in-up">
-        <form class="space-y-5">
+    <!-- Glass card form -->
+    <div class="card glass rounded-3xl shadow-xl">
+      <div class="card-body p-8 md:p-12">
+        <form class="space-y-6">
+
+          <!-- Section: Child Information -->
+          <h3 class="font-heading font-bold text-lg text-primary">Child Information</h3>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label class="label text-sm font-medium">Child's First Name</label>
-              <input type="text" placeholder="First name" class="input input-bordered w-full bg-base-100 focus:border-accent" />
+              <label class="label text-sm font-medium">First Name</label>
+              <input type="text" placeholder="First name" class="input input-bordered w-full rounded-full bg-base-100/80" />
             </div>
             <div>
-              <label class="label text-sm font-medium">Child's Last Name</label>
-              <input type="text" placeholder="Last name" class="input input-bordered w-full bg-base-100 focus:border-accent" />
+              <label class="label text-sm font-medium">Last Name</label>
+              <input type="text" placeholder="Last name" class="input input-bordered w-full rounded-full bg-base-100/80" />
             </div>
           </div>
           <div>
-            <label class="label text-sm font-medium">Child's Date of Birth</label>
-            <input type="date" class="input input-bordered w-full bg-base-100 focus:border-accent" />
-          </div>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <label class="label text-sm font-medium">Parent/Guardian Name</label>
-              <input type="text" placeholder="Your full name" class="input input-bordered w-full bg-base-100 focus:border-accent" />
-            </div>
-            <div>
-              <label class="label text-sm font-medium">Phone Number</label>
-              <input type="tel" placeholder="(555) 123-4567" class="input input-bordered w-full bg-base-100 focus:border-accent" />
-            </div>
-          </div>
-          <div>
-            <label class="label text-sm font-medium">Email Address</label>
-            <input type="email" placeholder="parent@email.com" class="input input-bordered w-full bg-base-100 focus:border-accent" />
+            <label class="label text-sm font-medium">Date of Birth</label>
+            <input type="date" class="input input-bordered w-full rounded-full bg-base-100/80" />
           </div>
           <div>
             <label class="label text-sm font-medium">Program</label>
-            <select class="select select-bordered w-full bg-base-100 focus:border-accent">
+            <select class="select select-bordered w-full rounded-full bg-base-100/80">
               <option disabled selected>Select a program</option>
               {programs.map((p) => (
                 <option>{p.name} ({p.age_range})</option>
               ))}
             </select>
           </div>
+
+          <div class="divider">Parent / Guardian</div>
+
+          <!-- Section: Parent Information -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="label text-sm font-medium">Your Full Name</label>
+              <input type="text" placeholder="Full name" class="input input-bordered w-full rounded-full bg-base-100/80" />
+            </div>
+            <div>
+              <label class="label text-sm font-medium">Phone Number</label>
+              <input type="tel" placeholder="(555) 123-4567" class="input input-bordered w-full rounded-full bg-base-100/80" />
+            </div>
+          </div>
+          <div>
+            <label class="label text-sm font-medium">Email Address</label>
+            <input type="email" placeholder="parent@email.com" class="input input-bordered w-full rounded-full bg-base-100/80" />
+          </div>
+
+          <div class="divider">Additional Details</div>
+
+          <!-- Section: Additional -->
           <div>
             <label class="label text-sm font-medium">Preferred Start Date</label>
-            <input type="date" class="input input-bordered w-full bg-base-100 focus:border-accent" />
+            <input type="date" class="input input-bordered w-full rounded-full bg-base-100/80" />
           </div>
           <div>
-            <label class="label text-sm font-medium">Additional Notes</label>
-            <textarea placeholder="Allergies, special needs, or anything we should know..." class="textarea textarea-bordered w-full bg-base-100 focus:border-accent h-24"></textarea>
+            <label class="label text-sm font-medium">Notes</label>
+            <textarea placeholder="Allergies, special needs, or anything we should know..." class="textarea textarea-bordered w-full rounded-3xl bg-base-100/80 h-24"></textarea>
           </div>
-          <button type="submit" class="btn btn-accent w-full btn-lg">
+
+          <button type="submit" class="btn btn-primary w-full btn-lg rounded-full shadow-lg mt-4">
             Submit Enrollment
           </button>
         </form>
-      </div>
 
-      <!-- Tuition Info -->
-      <div class="md:col-span-2 fade-in-up" style="animation-delay: 0.2s;">
-        <div class="bg-base-200 rounded-2xl p-6 border border-base-300/50 sticky top-24">
-          <h3 class="font-heading font-semibold text-lg mb-4">Tuition Rates</h3>
-          <div class="space-y-4">
-            {programs.map((p) => (
-              <div class="flex justify-between items-center py-2 border-b border-base-300/50 last:border-0">
-                <div>
-                  <p class="font-medium text-sm">{p.name}</p>
-                  <p class="text-xs text-base-content/50">{p.age_range}</p>
-                </div>
-                <span class="font-heading font-bold text-accent">{p.tuition}</span>
-              </div>
-            ))}
-          </div>
-          <div class="divider"></div>
-          <div class="space-y-2 text-sm text-base-content/60">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              Sibling discount available
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              Meals & snacks included
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-              </svg>
-              No registration fee
-            </p>
-          </div>
+        <!-- Tuition quick info -->
+        <div class="divider mt-8">Tuition at a Glance</div>
+        <div class="flex flex-wrap gap-3 justify-center">
+          {programs.map((p) => (
+            <div class="badge badge-lg badge-outline rounded-full px-4 py-3">
+              <span class="font-medium">{p.name}:</span>&nbsp;<span class="font-bold text-primary">{p.tuition}</span>
+            </div>
+          ))}
+        </div>
+        <div class="flex flex-wrap gap-2 justify-center mt-4">
+          <span class="badge badge-success badge-sm rounded-full">Sibling discount</span>
+          <span class="badge badge-success badge-sm rounded-full">Meals included</span>
+          <span class="badge badge-success badge-sm rounded-full">No registration fee</span>
         </div>
       </div>
     </div>

@@ -1,64 +1,61 @@
 ---
 import config from '../../site.json';
 ---
-<section class="min-h-[90vh] flex items-center pt-16">
-  <div class="container mx-auto px-6 lg:px-12">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <!-- Left: Text -->
-      <div class="fade-in-up">
-        <span class="badge badge-primary badge-lg text-xs tracking-widest uppercase mb-4">Now Enrolling</span>
+<section class="hero min-h-[90vh] bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10">
+  <div class="hero-content text-center flex-col py-24">
+    <!-- Floating decorative badges -->
+    <div class="relative w-full max-w-4xl">
+      <div class="absolute -top-8 left-8 hidden md:block animate-bounce" style="animation-duration: 3s;">
+        <span class="badge badge-primary badge-lg rounded-full shadow-lg">Ages 6wk-5yr</span>
+      </div>
+      <div class="absolute -top-4 right-12 hidden md:block animate-bounce" style="animation-duration: 4s; animation-delay: 0.5s;">
+        <span class="badge badge-secondary badge-lg rounded-full shadow-lg">Licensed</span>
+      </div>
+      <div class="absolute top-16 -left-4 hidden md:block animate-bounce" style="animation-duration: 3.5s; animation-delay: 1s;">
+        <span class="badge badge-accent badge-lg rounded-full shadow-lg">Safe & Secure</span>
+      </div>
+      <div class="absolute top-20 -right-2 hidden md:block animate-bounce" style="animation-duration: 4.5s; animation-delay: 0.3s;">
+        <span class="badge badge-info badge-lg rounded-full shadow-lg">Nurturing</span>
+      </div>
+
+      <!-- Main hero content -->
+      <div class="max-w-2xl mx-auto">
+        <span class="badge badge-primary badge-lg text-xs tracking-widest uppercase mb-6 rounded-full">Now Enrolling</span>
         <h1 class="text-5xl md:text-7xl font-heading font-bold leading-tight mb-6">
           Where Little Ones<br /><span class="text-primary">Shine Bright!</span>
         </h1>
-        <p class="text-lg text-base-content/70 max-w-md mb-8">
+        <p class="text-lg text-base-content/70 max-w-md mx-auto mb-10">
           {config.description}
         </p>
-        <div class="flex flex-wrap gap-4">
-          <a href="#enrollment" class="btn btn-primary btn-lg px-8">
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="#enrollment" class="btn btn-primary btn-lg rounded-full px-10 shadow-lg">
             Enroll Today
           </a>
-          <a href="#programs" class="btn btn-outline btn-secondary btn-lg px-8">
+          <a href="#programs" class="btn btn-outline btn-secondary btn-lg rounded-full px-10">
             Our Programs
           </a>
         </div>
-        <div class="flex items-center gap-6 mt-8">
+
+        <!-- Trust indicators -->
+        <div class="flex items-center justify-center gap-6 mt-12">
           <div class="flex -space-x-3">
             <div class="avatar">
-              <div class="w-10 rounded-full ring ring-base-100 ring-offset-base-100 ring-offset-1">
+              <div class="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-1">
                 <img src="https://images.unsplash.com/photo-1595003969974-1e5fcc61d5e0?w=80&h=80&fit=crop" alt="Happy child" />
               </div>
             </div>
             <div class="avatar">
-              <div class="w-10 rounded-full ring ring-base-100 ring-offset-base-100 ring-offset-1">
+              <div class="w-10 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-1">
                 <img src="https://images.unsplash.com/photo-1503919545889-aef636e10ad4?w=80&h=80&fit=crop" alt="Happy child" />
               </div>
             </div>
             <div class="avatar">
-              <div class="w-10 rounded-full ring ring-base-100 ring-offset-base-100 ring-offset-1">
+              <div class="w-10 rounded-full ring ring-accent ring-offset-base-100 ring-offset-1">
                 <img src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?w=80&h=80&fit=crop" alt="Happy child" />
               </div>
             </div>
           </div>
           <p class="text-sm text-base-content/60">Trusted by <span class="font-semibold text-base-content">100+ families</span> in Atlanta</p>
-        </div>
-      </div>
-
-      <!-- Right: Image -->
-      <div class="fade-in-up relative" style="animation-delay: 0.3s;">
-        <div class="relative aspect-square max-w-lg mx-auto">
-          <div class="absolute inset-0 bg-primary/10 rounded-3xl blur-3xl"></div>
-          <div class="relative bg-base-200 rounded-3xl overflow-hidden aspect-square border border-base-300/50">
-            <img src="https://images.unsplash.com/photo-1587654780293-48f9a77f2d1c?w=800&h=800&fit=crop" alt="Children playing at Little Stars daycare" class="w-full h-full object-cover" />
-          </div>
-          <!-- Floating badge -->
-          <div class="absolute -bottom-4 -left-4 bg-base-200 border border-base-300/50 rounded-2xl p-4 shadow-xl">
-            <p class="text-xs text-base-content/60 uppercase tracking-wider">Ages</p>
-            <p class="text-2xl font-heading font-bold text-primary">6wk - 5yr</p>
-          </div>
-          <!-- Floating badge top right -->
-          <div class="absolute -top-3 -right-3 bg-secondary text-secondary-content rounded-2xl p-3 shadow-xl">
-            <p class="text-xs font-bold uppercase tracking-wider">State Licensed</p>
-          </div>
         </div>
       </div>
     </div>

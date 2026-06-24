@@ -4,28 +4,23 @@ const schedule = config.daily_schedule;
 ---
 <section id="schedule" class="py-24 px-6 lg:px-12">
   <div class="container mx-auto">
-    <div class="text-center mb-16 fade-in-up">
-      <span class="badge badge-outline border-accent text-accent text-xs tracking-widest uppercase mb-4">A Day at Little Stars</span>
+    <div class="text-center mb-16">
+      <span class="badge badge-accent badge-lg rounded-full text-xs tracking-widest uppercase mb-4">A Day at Little Stars</span>
       <h2 class="text-4xl md:text-5xl font-heading font-bold">Daily Schedule</h2>
       <p class="text-base-content/60 mt-4 max-w-lg mx-auto">A structured yet flexible day that balances learning, play, rest, and fun.</p>
     </div>
 
-    <div class="max-w-3xl mx-auto">
-      <ul class="timeline timeline-vertical timeline-snap-icon">
+    <div class="max-w-2xl mx-auto">
+      <ul class="steps steps-vertical w-full">
         {schedule.map((item, index) => (
-          <li>
-            {index > 0 && <hr class="bg-accent" />}
-            <div class="timeline-middle">
-              <div class="w-8 h-8 bg-accent text-accent-content rounded-full flex items-center justify-center text-xs font-bold">
-                {index + 1}
+          <li class={`step ${index <= 4 ? 'step-primary' : index <= 7 ? 'step-secondary' : 'step-accent'}`} data-content={index + 1}>
+            <div class="text-left py-4 pl-2">
+              <div class="flex items-center gap-3 mb-1">
+                <span class="badge badge-sm rounded-full font-mono">{item.time}</span>
+                <span class="font-heading font-bold text-lg">{item.activity}</span>
               </div>
+              <p class="text-base-content/60 text-sm ml-1">{item.description}</p>
             </div>
-            <div class={`timeline-${index % 2 === 0 ? 'start' : 'end'} mb-10 ${index % 2 === 0 ? 'md:text-end' : ''}`}>
-              <time class="font-mono text-accent font-bold">{item.time}</time>
-              <div class="text-lg font-heading font-semibold">{item.activity}</div>
-              <p class="text-base-content/60 text-sm">{item.description}</p>
-            </div>
-            <hr class="bg-accent" />
           </li>
         ))}
       </ul>
